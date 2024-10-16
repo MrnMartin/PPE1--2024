@@ -19,4 +19,17 @@ Pour la prochaine fois:
 - Réglé le problème de la clé SSH
 - Acquérir un meilleur contrôle des commandes pour la console
 
+## 14/10/2024
+  Objectif : 
+  - Faire l'exercice Pipelines
+  - Réussir à utilisé les commandes ( combinaison )
+  - Envoyer sur mon github
+  - Créer un tag
+
+   Problèmes rencontrés:
+  - Problème avec la commande echo, utilisation de la commande vim et car en avant
+  - Problème d'importation de mon dossier du local à github avec mon terminal
+   
+   Pour la prochaine fois
+   - Vérifier les commandes 
   
