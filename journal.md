@@ -44,6 +44,7 @@ Pour la prochaine fois:
    Problème rencontrés:
    - Beaucoup de difficulté avec la manière de faire
    - Fort incompréhension de certaines commandes
+   - Exercice 3 et 4 à revoir
 
   Pour la prochaine fois:
   - Apprendre à rédiger correctement un script   
