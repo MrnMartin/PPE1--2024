@@ -32,4 +32,18 @@ Pour la prochaine fois:
    
    Pour la prochaine fois
    - Vérifier les commandes 
-  
+
+## 21/10/2024
+   Objectif : 
+   - Ecrire des scripts
+   - Tests et validation des arguments
+   - Boucles
+   - Synchroniser vers le dépôt
+   - Créer un tag
+
+   Problème rencontrés:
+   - Beaucoup de difficulté avec la manière de faire
+   - Fort incompréhension de certaines commandes
+
+  Pour la prochaine fois:
+  - Apprendre à rédiger correctement un script   
