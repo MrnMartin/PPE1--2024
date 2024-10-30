@@ -37,3 +37,9 @@ echo "$L"
 echo "$P"
 echo "$Dat"
 echo "$O"
+
+#Or
+
+#for year in 2016 2017 2018; do
+#echo "$year : $(./compte_par_type.sh $year $1)"
+#done
