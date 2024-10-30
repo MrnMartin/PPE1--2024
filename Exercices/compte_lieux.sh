@@ -2,7 +2,9 @@
 
 doss="/home/mrinab/Exercice1/ann"
 
-echo "<year> <month> <nb>"
+if [ $# -ne 1 ]
+then
+echo " $ 0 <year> <month> <nb>"
 exit 1 
 fi
 
