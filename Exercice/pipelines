@@ -4,6 +4,6 @@ ls 2018 | wc -l
 cat 2016/*| egrep -o "\bLocation\b" | wc -l
 cat 2017/*| egrep -o "\bLocation\b" | wc
 cat 2018/*| egrep -o "\bLocation\b" | wc -l
-cat 2016/*| grep  "Location" | cut -d ' ' -f3- | sort | uniq -c | sort -nr | head -15
-cat 2017/*| grep  "Location" | cut -d ' ' -f3- | sort | uniq -c | sort -nr | head -15
-cat 2018/*| grep  "Location" | cut -d ' ' -f3- | sort | uniq -c | sort -nr | head -15
+cat 2016/*| grep  "Location" | cut -f 3 | sort | uniq -c | sort -nr | head -15
+cat 2017/*| grep  "Location" | cut -f 3 | sort | uniq -c | sort -nr | head -15
+cat 2018/*| grep  "Location" | cut -f 3 | sort | uniq -c | sort -nr | head -15
