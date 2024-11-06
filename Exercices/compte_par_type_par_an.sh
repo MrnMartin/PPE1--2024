@@ -1,4 +1,8 @@
 #!/usr/bin/bash
+if [ $# -ne 1]
+then
+  echo="Attend un seul argument"
+fi
 
 typeentite=$1
 
