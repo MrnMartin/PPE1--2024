@@ -1,13 +1,18 @@
 #!/usr/bin/bash
 
-dos="/home/mrinab/Exercice1/ann/2016"
+if [$# -ne 2 ]
+then
+	echo "Le script prend deux arguments exactement"
+	exit 1
+fi
 
-L=$(grep -r 'Location' "$dos"/*.ann | wc -l)
-P=$(grep -r 'Person' "$dos"/*.ann | wc -l)
-Dat=$(grep -r 'Date' "$dos"/*.ann | wc -l )
-O=$(grep -r 'Organization' "$dos"/*.ann | wc -l)
+annee=$1
+typeentite=$2
 
-echo "$L"
-echo "$P"
-echo "$Dat"
-echo "$O"
+if [[!  $annee =~ ^[0-9][4]$ ]] #Différent 
+then
+	echo "L'année doit être 4 chiffres"
+	exit 2 
+fi
+
+grep $typeentite ann/$annee/*.ann | wc -l
