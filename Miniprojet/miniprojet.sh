@@ -22,15 +22,19 @@ do
 #Exercice2
 
 #Je récupère le code http
-http_code=$(curl -s -o/dev/null -w "%{http_code}" "$line")
+http_code=$(curl -s -I -L -w "%(http_code)" -o /dev/null "$line")
 
 #Je récupère l'encodage
 encoding=$(curl -s -I "$line" | grep -i "Content-Type" | sed -n 's/.*charset=\([^ ;]*\).*/\1/p')
 
-#Voici ce que j'ai fais pour le nbr mais cela ne fonctionne pas
-#nbrmot=$(curl -s "$line")
+if [ -z $encoding ] #encoding=${encoding:-"N/A"}
+then 
+	encoding="N/A"
+fi
 
-	echo -e "${lignenbr}\t$line\t$http_code\t$encoding" #\tnbrmot (pour rassembler tout)
+nbrmot=$(lynx -dump -nolist $line | wc -w)
+
+	echo -e "${lignenbr}\t$line\t$http_code\t$encoding\t$nbrmots" 
 
 	#Défiler le comptage
 	((lignenbr++)) #Exercice1
