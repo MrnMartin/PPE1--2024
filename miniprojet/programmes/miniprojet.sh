@@ -6,6 +6,27 @@ then
 	exit 1
 fi
 
+I=0
+echo "<html>"
+echo "<html lang='fr'"
+echo "<head>"
+echo "    <meta charset=\"UTF-8\">"
+echo "    <title>Mini-projet</title>"
+echo "    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bulma@1.0.2/css bulma.min.css\">"
+echo "</head>"
+echo "<body>"
+echo "  <h1>Liste des URLS</h1>"
+echo "  <table border='1'>"
+echo "   <thead>"
+echo "        <tr>"
+echo "           <th>#</th>"
+echo "                <th>URL</th>"
+echo "               <th>Status</th>"
+echo "              <th>Encoding</th>"
+echo "              <th>Nombre de mot</th>"
+echo "        </tr>"
+echo "		</thead>"
+echo "		<tbody>"
 #Récupération de l'argument
 urls=$1
 
@@ -31,8 +52,21 @@ fi
 
 nbrmot=$(lynx -dump -nolist $line | wc -w)
 
-	echo -e "${lignenbr}\t$line\t$http_code\t$encoding\t$nbrmot"
+	echo "        <tr>"
+	echo "            <td>$lignenbr</td>"
+	echo "            <td>$line</td>"
+	echo "            <td>$http_code</td>"
+	echo "            <td>$encoding</td>"
+	echo "            <td>$nbrmot</td>"
+	echo "        </tr>"
+
 
 	#Défiler le comptage
 	((lignenbr++)) #Exercice1
 done < $urls
+
+echo "	 </tbody>"
+echo "  </table>"
+echo " </div>"
+echo "</body>"
+echo "</html>"
