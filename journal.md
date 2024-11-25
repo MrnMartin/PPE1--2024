@@ -47,4 +47,15 @@ Pour la prochaine fois:
    - Exercice 3 et 4 à revoir
 
   Pour la prochaine fois:
-  - Apprendre à rédiger correctement un script   
+  - Apprendre à rédiger correctement un script
+
+  ## 25/11/2024
+   Objectif:
+    - Faire un index html 
+    - Changer le script pour le design
+    - Le tableau doit être plus élégant
+
+   Problème rencontrés: 
+   - Je n'ai pas du tout réussi ce qu'il fallait faire
+   - Complexité avec style Bulma (J'aurais préféré juste faire une page css)
+   - J'ai donc utilisé du css sans mon code HTML
